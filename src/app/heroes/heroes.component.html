@@ -1,0 +1,7 @@
+<p *ngIf="heroes.length > 3">There are many heroes!</p>
+<div *ngFor="let hero of heroes">
+    <h2>{{hero.name | uppercase}} details</h2>
+    <div>id: {{hero.id}}</div>
+    <div>
+        <input [(ngModel)]="hero.name" placeholder="name"/> </div>
+    </div>
